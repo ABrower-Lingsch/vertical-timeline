@@ -1,3 +1,6 @@
+@media (min-width: 768px) {
+
+
 body {
     background-color: rgb(169, 169, 169);
 }
@@ -32,8 +35,9 @@ body {
     background-color: #ffffff;
     height:fit-content;
     margin-left: 53px;
+    margin-top: 300px;
     width: 400px;
-    transform: translateY(80%);
+    /* transform: translateY(80%); */
     position: relative;
     border-radius: 8px;
 }
@@ -182,3 +186,8 @@ button {
     transform: translateX(-50%);
 }
 
+button:hover {
+    background-color: blue;
+}
+
+}
