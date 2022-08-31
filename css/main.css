@@ -52,10 +52,12 @@ body {
 }
 
 .card-three {
+    position: relative;
     background-color: #ffffff;
     height: fit-content;
     width: 400px;
     transform: translate(60%, -140%);
+    border-radius: 8px;
     
 }
 
@@ -93,7 +95,7 @@ button {
     border-radius: 4px;
 }
 
-.date-one {
+.date-one, .date-three {
     position: absolute;
     right: 0;
     top: 0;
@@ -110,6 +112,14 @@ button {
     padding-left: 15px;
 }
 
-.date-three {
-    
+.title-three {
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+.text-three {
+    width: 80%;
+    margin: 30px;
+    padding: 10px;
+    border-left: solid 5px rgb(11, 78, 121);
 }
