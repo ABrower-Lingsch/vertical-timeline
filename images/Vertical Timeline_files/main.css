@@ -13,19 +13,16 @@ body {
 
 .card-one {
     background-color: #ffffff;
-    height: fit-content;
+    height: 250px;
     margin-right: 20px;
     width: 400px;
     transform: translate(60%, 15%);
-    border-radius: 8px;
-    position: relative;
 }   
 
 .timeline-bar {
-    background-color: rgb(11, 78, 121);
+    background-color: #0000ff;
     height: 1000px;
     position: relative;
-    width: 4px;
 }
 
 .timeline-point-one {
@@ -39,9 +36,9 @@ body {
     height:fit-content;
     margin-left: 53px;
     width: 400px;
-    transform: translateY(92%);
+    transform: translateY(100%);
     position: relative;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .pic-one {
@@ -78,38 +75,6 @@ body {
     color: #2a2a2a;
 }
 
-.text-one, .text-two {
-    width: 90%;
-    text-align: left;
-    margin-left: 20px;
-}
-
-button {
-    background-color: rgb(11, 78, 121);
-    color: #ffffff;
-    width: 90px;
-    height: 30px;
-    transform: translate(20%, -30%);
-    border-radius: 4px;
-}
-
-.date-one {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: rgb(247, 61, 89);
-    margin: 0;
-    width: 120px;
-    line-height: 40px;
-    text-align: center;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.title-one {
-    padding-left: 15px;
-}
-
-.date-three {
+.text-two {
     
 }
