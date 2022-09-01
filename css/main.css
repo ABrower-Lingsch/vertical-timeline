@@ -1,42 +1,91 @@
-@media (min-width: 768px) {
-
+/* @media (min-width: 1120px) { */
 
 body {
     background-color: rgb(169, 169, 169);
+    margin: 0 auto;
 }
 
 .timeline {
     margin: 0 auto;
     padding: 25px;
-    display: grid;
-    grid-template-columns: 1fr 3px 1fr;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 3px 1fr; */
     font-family: sans-serif;
+    min-height: 100vh;
 
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    position: relative;
+
+}
+
+.card {
+    width: 400px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.card:nth-child(even)::before {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #ffffff;
+
+    position: absolute;
+    top: 55px;
+    left: 100%;
+
+}
+
+.card:nth-child(odd)::before {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #ffffff;
+
+    position: absolute;
+    top: 55px;
+    transform: translateX(-100%);
+}
+
+.card:nth-child(odd) {
+    margin-left: auto;
 }
 
 .card-one {
     background-color: #ffffff;
-    height: 220px;
-    margin-right: 20px;
-    width: 400px;
-    transform: translate(60%, 15%);
+    /* height: 220px; */
+    /* margin-right: 20px; */
+    /* width: 400px; */
+    /* transform: translate(-113%, 15%); */
     border-radius: 8px;
     position: relative;
 }   
 
 .timeline-bar {
     background-color: rgb(11, 78, 121);
-    height: 1000px;
+    min-height: 100%;
     position: relative;
     width: 4px;
+    /* left: 100%; */
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .card-two {
     background-color: #ffffff;
-    height:fit-content;
-    margin-left: 53px;
-    margin-top: 300px;
-    width: 400px;
+    /* height:fit-content; */
+    /* margin-left: 53px;
+    margin-top: 300px; */
+    /* width: 400px; */
     /* transform: translateY(80%); */
     position: relative;
     border-radius: 8px;
@@ -52,11 +101,10 @@ body {
 .card-three {
     position: relative;
     background-color: #ffffff;
-    height: 240px;
-    width: 400px;
-    transform: translate(60%, -140%);
+    /* height: 240px; */
+    /* width: 400px; */
+    /* transform: translate(60%, -140%); */
     border-radius: 8px;
-    
 }
 
 .date-two {
@@ -166,7 +214,7 @@ button {
 
 .timeline-point-two {
     position: absolute;
-    top: 350px;
+    top: 320px;
     left: 50%;
     width: 20px;
     height: 20px;
@@ -177,7 +225,7 @@ button {
 
 .timeline-point-three {
     position: absolute;
-    top: 710px;
+    top: 700px;
     left: 50%;
     width: 20px;
     height: 20px;
@@ -189,28 +237,99 @@ button {
 button:hover {
     background-color: blue;
 }
+/* } */
 
+
+i {
+    color: #ffffff;
+    font-size: 12px;
+    transform: translateX(25%);
 }
 
-@media (max-width: 767px) {
+
+
+
+
+@media (max-width: 1120px) {
+    .card:nth-child(odd) {
+        margin-left: initial;
+    }
+
+
+    .card:nth-child(even)::before {
+        border-left: initial;
+        border-right: 10px solid #ffffff;
+
+        left: initial;
+        transform: translate(-100%);
+    
+    }
+
+    .timeline {
+        align-items: center;
+    }
+
+    .timeline-bar {
+        /* left: -1%; */
+        left: calc(50% - 200px + -4%);
+    }
+
+    /* .right-arrow-one {
+        content: "";
+        width: 0; 
+        height: 0; 
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #ffffff;
+        transform: translate(-100%, -850%);
+        
+    }
+    
+    .right-arrow-two {
+        content: "";
+        width: 0; 
+        height: 0; 
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #ffffff;
+        transform: translate(-100%, -1000%)
+    }
+    
+    .left-arrow {
+        content: "";
+        width: 0; 
+        height: 0; 
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent; 
+        border-right:10px solid #ffffff; 
+        transform: translate(-100%, -1400%);
+    } */
+}
+
+/* 
+@media (max-width: 1119px) {
 
     body {
         background-color: rgb(169, 169, 169);
+        position: relative;
+        margin: 0 auto;
     }
     
     .timeline {
-        margin: 0 auto;
+        
         padding: 25px;
         display: grid;
         grid-template-columns: 3px 1fr;
         font-family: sans-serif;
+        position: absolute;
+
     
     }
     
     .card-one {
         background-color: #ffffff;
         height: 220px;
-        margin-right: 20px;
+        
         width: 400px;
         transform: translate(23%, 15%);
         border-radius: 8px;
@@ -389,4 +508,4 @@ button:hover {
 
 
 
-}
+} */
